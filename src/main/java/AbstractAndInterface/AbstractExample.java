@@ -16,10 +16,19 @@ class DogAbstract extends AnimalAbstract{
     }
 
 }
+class CatAbstract extends AnimalAbstract{
+    public void sound(){
+        System.out.println("The Cat meows");
+    }
+}
 public class AbstractExample {
     public static void main(String[] args) {
         AnimalAbstract myDog = new DogAbstract();
         myDog.sound();
         myDog.sleep();
+
+
+        AnimalAbstract myCat = new CatAbstract();
+        myCat.sound();
     }
 }
